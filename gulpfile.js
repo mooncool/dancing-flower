@@ -3,6 +3,8 @@
  */
 'use strict';
 
+const PROJECT_NAME = 'dancing-flower';
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
@@ -23,7 +25,7 @@ gulp.task('build:css', function() {
     return gulp.src(paths.scss + '/dancing-flower.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(rename({
-            basename: 'dancing-flower',
+            basename: PROJECT_NAME,
             extname: '.css'
         }))
         .pipe(gulp.dest(paths.dist + '/css'))
@@ -40,8 +42,8 @@ gulp.task('build:fonts', function() {
 });
 
 gulp.task('build:js', function() {
-    return gulp.src(paths.fonts + '/**/*.js')
-        .pipe(concat('dancing-flower.js'))
+    return gulp.src(paths.js + '/**/*.js')
+        .pipe(concat(PROJECT_NAME + '.js'))
         .pipe(gulp.dest(paths.dist + '/js'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
