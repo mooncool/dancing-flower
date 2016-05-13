@@ -1,0 +1,23 @@
+{
+  "name": "dancing-flower",
+  "version": "1.0.0",
+  "description": "CSS & components for cshen.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooncool/dancing-flower.git"
+  },
+  "keywords": [
+    "css",
+    "cshen"
+  ],
+  "author": "Moon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mooncool/dancing-flower/issues"
+  },
+  "homepage": "https://github.com/mooncool/dancing-flower#readme"
+}
