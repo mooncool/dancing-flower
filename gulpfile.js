@@ -67,6 +67,15 @@ gulp.task('clean', function () {
     return del(paths.dist);
 });
 
+gulp.task('watch', ['build'], function() {
+    gulp.watch(paths.js + '/**/*.js', ['build:js']);
+    gulp.watch(paths.scss + '/**/*.scss', ['build:css']);
+    gulp.watch(paths.fonts + '/**/*', ['build:fonts']);
+    gulp.watch(paths.demo + '/**/*.html', ['build:html']);
+});
+
+gulp.task('debug', ['watch']);
+
 gulp.task('default', ['clean'], function() {
     gulp.start('build');
 });
