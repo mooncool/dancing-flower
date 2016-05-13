@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/mooncool/dancing-flower/issues"
   },
-  "homepage": "https://github.com/mooncool/dancing-flower#readme"
+  "homepage": "https://github.com/mooncool/dancing-flower#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1"
+  }
 }
