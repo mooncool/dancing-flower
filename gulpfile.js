@@ -18,6 +18,7 @@ var paths = {
     js: 'js',
     scss: 'scss',
     fonts: 'fonts',
+    demo: 'demo',
     dist: 'dist'
 };
 
@@ -41,6 +42,11 @@ gulp.task('build:fonts', function() {
         .pipe(gulp.dest(paths.dist + '/fonts'));
 });
 
+gulp.task('build:html', function() {
+    return gulp.src(paths.demo + '/**/*.html')
+        .pipe(gulp.dest(paths.dist));
+});
+
 gulp.task('build:js', function() {
     return gulp.src(paths.js + '/**/*.js')
         .pipe(concat(PROJECT_NAME + '.js'))
@@ -53,6 +59,7 @@ gulp.task('build:js', function() {
 gulp.task('build', [
     'build:css',
     'build:fonts',
+    'build:html',
     'build:js'
 ]);
 
