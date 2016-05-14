@@ -127,3 +127,23 @@ $line-height-small:         1.5 !default;
 $grid-columns:              12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
 $grid-gutter-width:         20px !default;
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+$nav-link-padding:                          5px 15px !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
+
+$nav-disabled-link-color:                   $gray-light !default;
+$nav-disabled-link-hover-color:             $gray-light !default;
+
+//== Tabs
+$nav-tabs-border-color:                     #ddd !default;
+
+$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+
+$nav-tabs-active-link-hover-bg:             $body-bg !default;
+$nav-tabs-active-link-hover-color:          $brand-danger !default;
+$nav-tabs-active-link-hover-border-color:   #ddd !default;
