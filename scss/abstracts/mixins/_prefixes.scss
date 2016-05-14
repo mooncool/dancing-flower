@@ -1,0 +1,20 @@
+// Vendor Prefixes
+//
+
+@mixin flex-container() {
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: -o-box;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+@mixin flex() {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
