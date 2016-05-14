@@ -2,7 +2,7 @@ $version: '1.0.0';
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
+//## Gray and brand colors for use.
 
 $white:         rgb(255, 255, 255) !default;
 $gray-darker:   rgb(51, 61, 71) !default;
@@ -17,6 +17,8 @@ $brand-warning: rgb(255, 180, 0) !default;
 $brand-success: rgb(31, 203, 194) !default;
 $brand-info:    rgb(43, 175, 255) !default;
 $brand-primary: rgb(0, 102, 221) !default;
+
+$common-border-color: $gray-light;
 
 //== Scaffolding
 //

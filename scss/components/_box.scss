@@ -2,9 +2,15 @@
  * @author Moon
  */
 .box {
+    width: 100%;
     .box-header {
-        // border-left: 3px solid $red;
-        padding: 10px;
+        padding: 5px 0;
+        border-bottom: 1px solid $common-border-color;
+
+        p {
+            padding-left: 10px;
+            border-left: 3px solid $brand-danger;
+        }
     }
 
     .box-body {
