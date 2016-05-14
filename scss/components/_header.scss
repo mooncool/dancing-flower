@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    padding: $header-padding;
+    border-bottom: 1px solid $header-border-color;
+    text-align: center;
+    a {
+        padding: $header-padding;
+        line-height: $line-height-base;
+        position: absolute;
+        top: 0;
+        text-align: center;
+
+        &:first-child {
+            left: 10px;
+        }
+
+        &:last-child {
+            right: 10px;
+        }
+    }
+}

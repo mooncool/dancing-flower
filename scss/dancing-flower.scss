@@ -1,9 +1,9 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+@import "base/iconfont";
 @import 'base/reset';
 @import "base/normarlize";
-@import "base/iconfont";
 
 @import "components/divider";
 @import 'components/layout';
@@ -17,3 +17,4 @@
 @import 'components/list';
 @import 'components/msg-box';
 @import 'components/tab';
+@import "components/header";
