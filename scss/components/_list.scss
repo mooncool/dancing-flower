@@ -1,0 +1,64 @@
+.list {
+    width: 100%;
+
+    .item {
+        padding: 5px;
+        white-space: nowrap;
+        position: relative;
+        @include border($common-border-config, top);
+
+        &:last-child {
+            @include border($common-border-config, bottom);
+        }
+
+        .img-container {
+            width: 25%;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+
+            &:after {
+                content: '';
+                margin-top: 100%;
+                display: block;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+        }
+
+        h5,
+        p {
+            position: absolute;
+            display: inline-block;
+            left: 25%;
+            margin-left: 10px;
+            right: 5px;
+        }
+
+        h5 {
+            overflow: hidden;
+        }
+
+        p {
+            &:first-of-type {
+                bottom: 30px;
+            }
+            &:last-child {
+                bottom: 5px;
+            }
+        }
+
+        .price {
+            color: $brand-danger;
+        }
+
+        .del-price {
+            color: $gray;
+        }
+    }
+}
