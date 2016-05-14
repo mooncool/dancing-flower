@@ -1,0 +1,53 @@
+.grid {
+    width: 100%;
+    font-size: 0;
+    @include border($common-border-config, bottom);
+
+    .item {
+        width: 50%;
+        padding: 5px;
+        display: inline-block;
+        @include box-sizing(border-box);
+        @include border($common-border-config, top);
+
+        &:nth-child(odd) {
+            @include border($common-border-config, right);
+        }
+
+        .img-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &:after {
+                content: '';
+                margin-top: 100%;
+                display: block;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+        }
+
+        h5 {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .price {
+            color: $brand-danger;
+        }
+
+        .del-price {
+            color: $gray;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}

@@ -18,3 +18,8 @@
     -ms-flex: 1;
     flex: 1;
 }
+@mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}

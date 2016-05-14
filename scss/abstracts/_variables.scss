@@ -18,7 +18,8 @@ $brand-success: rgb(31, 203, 194) !default;
 $brand-info:    rgb(43, 175, 255) !default;
 $brand-primary: rgb(0, 102, 221) !default;
 
-$common-border-color: $gray-light;
+$common-border-color: $gray-lighter;
+$common-border-config: 1px solid $common-border-color;
 
 //== Scaffolding
 //

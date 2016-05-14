@@ -1,0 +1,13 @@
+@mixin border($style, $slides...) {
+    @if($style != '') {
+        @if($slides == '') {
+            border: $style;
+        } @else {
+            @each $slide in $slides {
+                @if($slide == 'top' or $slide == 'right' or $slide == 'bottom' or $slide == 'left') {
+                    border-#{$slide}: $style;
+                }
+            }
+        }
+    }
+}
