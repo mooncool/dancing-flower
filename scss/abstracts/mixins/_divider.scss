@@ -1,0 +1,8 @@
+@mixin divider($i: 1) {
+    @for $i from 1 through 4 {
+        .divider-#{$i * 5} {
+            width: 100%;
+            height: ($i * 5) * 1px;
+        }
+    }
+}
