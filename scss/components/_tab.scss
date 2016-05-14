@@ -11,6 +11,7 @@
     margin-bottom: 0;
     padding-left: 0; // Override default ul/ol
     list-style: none;
+    background-color: $tab-bg-color;
     @include clearfix;
 
     > li {
@@ -59,20 +60,24 @@
 // Give the tabs something to sit on
 .tab-horizon {
     border-bottom: 1px solid $nav-tabs-border-color;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width:100%;
+    @include flex-container;
     > li {
-        float: left;
+        text-align: center;
         // Make the list-items overlay the bottom border
         margin-bottom: -1px;
+        @include flex;
 
         // Actual tabs (as links)
         > a {
             margin-right: 2px;
             line-height: $line-height-base;
-            border: 1px solid transparent;
-            border-radius: $border-radius-base $border-radius-base 0 0;
-            &:hover {
-                border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
-            }
         }
 
         // Active state, and its :hover to override normal :hover
@@ -82,8 +87,6 @@
             &:focus {
                 color: $nav-tabs-active-link-hover-color;
                 background-color: $nav-tabs-active-link-hover-bg;
-                border: 1px solid $nav-tabs-active-link-hover-border-color;
-                border-bottom-color: transparent;
                 cursor: default;
             }
         }
@@ -92,7 +95,6 @@
 
 //Tab-vertical
 .tab-vertical {
-    border-top: 1px solid $nav-tabs-border-color;
     > li {
         position: relative;
         display: block;
