@@ -75,23 +75,30 @@ a.btn {
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
-.btn-outline .btn-default {
-    @include button-color($btn-default-bg, $btn-default-color, $btn-default-border);
-}
-.btn-outline .btn-primary {
-    @include button-color($btn-primary-bg, $btn-primary-color, $btn-default-border);
-}
-.btn-outline .btn-success {
-    @include button-color($btn-success-bg, $btn-success-color, $btn-default-border);
-}
-.btn-outline .btn-info {
-    @include button-color($btn-info-bg, $btn-info-color, $btn-default-border);
-}
-.btn-outline .btn-warning {
-    @include button-color($btn-warning-bg, $btn-warning-color, $btn-default-border);
-}
-.btn-outline .btn-danger {
-    @include button-color($btn-danger-bg, $btn-danger-color, $btn-default-border);
+.btn-outline {
+    .btn-default {
+        @include button-color($btn-default-bg, $btn-default-color, $btn-default-border);
+    }
+
+    .btn-primary {
+        @include button-color($btn-primary-bg, $btn-primary-color, $btn-default-border);
+    }
+
+    .btn-success {
+        @include button-color($btn-success-bg, $btn-success-color, $btn-default-border);
+    }
+
+    .btn-info {
+        @include button-color($btn-info-bg, $btn-info-color, $btn-default-border);
+    }
+
+    .btn-warning {
+        @include button-color($btn-warning-bg, $btn-warning-color, $btn-default-border);
+    }
+
+    .btn-danger {
+        @include button-color($btn-danger-bg, $btn-danger-color, $btn-default-border);
+    }
 }
 
 // Button Sizes
