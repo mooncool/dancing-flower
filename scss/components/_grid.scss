@@ -1,5 +1,6 @@
 .grid {
     width: 100%;
+    display: block;
     font-size: 0;
     @include border($common-border-config, bottom);
 
@@ -48,8 +49,12 @@
             color: $gray;
         }
 
-        p {
-            margin-top: 5px;
+        small {
+            color: $gray-dark;
+            overflow: hidden;
+            display: block;
+            height: 18px;
+            line-height: 18px;
         }
     }
 }
