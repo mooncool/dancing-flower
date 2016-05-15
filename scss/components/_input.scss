@@ -2,28 +2,65 @@
     width: 100%;
     height: 40px;
     line-height: 40px;
+    position: relative;
     @include border($common-border-config, top);
 
     &:last-child {
         @include border($common-border-config, bottom);
     }
 
-    input {
+    input,
+    select {
         width: 100%;
         border: none;
-        padding-left: 45px;
+        padding-right: 10px;
         @include box-sizing(border-box);
-        outline: none;
+        background-color: $white;
     }
 
-    span {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        text-align: center;
+    &.has-icon {
+        input {
+            padding-left: 45px;
+        }
 
-        i {
+        .icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &.has-text {
+        input,
+        select {
+            padding-left: 105px;
+        }
+
+        .text {
+            position: absolute;
+            width: 90px;
+            height: 40px;
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        .necessary {
+            position: absolute;
+            right: 5px;
             font-size: 20px;
+            top: 4px;
+            color: $brand-danger;
+        }
+        
+        .select-icon {
+            position: absolute;
+            top: 0;
+            right: 10px;
         }
     }
 }
