@@ -1,0 +1,29 @@
+.input-group {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    @include border($common-border-config, top);
+
+    &:last-child {
+        @include border($common-border-config, bottom);
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        padding-left: 45px;
+        @include box-sizing(border-box);
+        outline: none;
+    }
+
+    span {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}
