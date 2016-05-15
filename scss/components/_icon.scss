@@ -1,0 +1,54 @@
+.icon-lg {
+    font-size: 20px;
+}
+.icon-fixed {
+    position: fixed;
+    z-index: 9;
+
+    &.icon-fixed-left-top {
+        left: 10px;
+        top: 10px;
+    }
+    &.icon-fixed-left-bottom {
+        left: 10px;
+        bottom: 10px;
+    }
+    &.icon-fixed-right-top {
+        right: 10px;
+        top: 10px;
+    }
+    &.icon-fixed-right-bottom {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    span {
+        z-index: 10;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        color: $white;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background-color: darken($brand-danger, 10%);
+        border-radius: 50%;
+    }
+}
+.icon-circle {
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: inline-block;
+
+    &.icon-circle-red {
+        background-color: rgba(236, 81, 81, .8);
+    }
+}
