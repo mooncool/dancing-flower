@@ -14,6 +14,13 @@ body {
     height: 100%;
 }
 
+input {
+    outline: none;
+}
+
 .float-right {
     float: right !important;
+}
+.content {
+    padding: 10px;
 }

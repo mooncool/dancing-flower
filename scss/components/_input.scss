@@ -27,3 +27,26 @@
         }
     }
 }
+.input-addon {
+    display: inline-block;
+    border: $common-border-config;
+    font-size: 0;
+    height: 30px;
+
+    span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-color: $gray-lighter;
+        font-size: 20px;
+    }
+
+    input {
+        width: 40px;
+        border: none;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}
