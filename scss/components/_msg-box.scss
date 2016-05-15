@@ -1,0 +1,33 @@
+.msg-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 180px;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 5px;
+
+    i,
+    span {
+        color: $white;
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+    }
+
+    span {
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    &.success {
+        background-color: rgba(31, 203, 194, .9);
+    }
+
+    &.error {
+        background-color: rgba(236, 81, 81, .9);
+    }
+}
