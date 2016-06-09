@@ -22,3 +22,9 @@
 @import "components/label";
 @import "components/carousel";
 @import "components/extra";
+
+.category-full-height {
+    position: absolute;
+    left: 25%;
+    height: 100%;
+}

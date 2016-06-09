@@ -91,3 +91,24 @@
         padding: 10px 0;
     }
 }
+
+.category-box {
+    background-color: #fff;
+    margin-top: 0;
+    @include border($common-border-config, bottom);
+
+    .box-body {
+        font-size: 0;
+        font-size: 0;
+        padding: 10px 0;
+
+        span {
+            width: 33.33%;
+            text-align: center;
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            overflow: hidden;
+        }
+    }
+}
