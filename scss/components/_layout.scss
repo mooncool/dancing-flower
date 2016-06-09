@@ -1,37 +1,24 @@
-//
-// Grid system
-// --------------------------------------------------
-
-
-// Container widths
-//
-// Set the container width, and override it for fixed navbars in media queries.
 
 .container {
     @include container-fixed;
+    height: 100%;
 }
-
-
-// Fluid container
-//
-// Utilizes the mixin meant for fixed width containers, but without any defined
-// width for fluid, full width layouts.
-
-
-
-// Row
-//
-// Rows contain and clear the floats of your columns.
 
 .row {
     @include make-row;
 }
 
-
-// Columns
-//
-// Common styles for small and large grid columns
-
 @include make-grid-columns;
 
 @include make-grid;
+
+.wrapper {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+
+    &.wrapper-padding {
+        padding: 10px;
+    }
+}

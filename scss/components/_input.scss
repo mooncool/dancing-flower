@@ -16,6 +16,12 @@
         padding-right: 10px;
         @include box-sizing(border-box);
         background-color: $white;
+        height: 40px;
+        border-radius: 0;
+    }
+
+    select {
+        height: 41px;
     }
 
     &.has-icon {
@@ -56,12 +62,12 @@
             top: 4px;
             color: $brand-danger;
         }
-        
-        .select-icon {
-            position: absolute;
-            top: 0;
-            right: 10px;
-        }
+    }
+
+    .right-icon {
+        position: absolute;
+        top: 0;
+        right: 10px;
     }
 }
 .input-addon {
@@ -70,7 +76,7 @@
     font-size: 0;
     height: 30px;
 
-    span {
+    button {
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -78,6 +84,7 @@
         line-height: 30px;
         background-color: $gray-lighter;
         font-size: 20px;
+        border: 0;
     }
 
     input {

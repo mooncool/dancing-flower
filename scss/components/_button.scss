@@ -125,11 +125,11 @@ a.btn {
 }
 
 .toggle-btn {
-    padding: 5px 10px;
+    padding: 5px 15px;
     color: $black-light;
     border: 1px solid $gray;
     background-color: $white;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-right: 5px;
 
     &.active {

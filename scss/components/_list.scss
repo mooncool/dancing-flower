@@ -62,3 +62,52 @@
         }
     }
 }
+
+.block-list {
+    width: 100%;
+
+    li {
+        margin-top: 10px;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        height: 20px;
+        position: relative;
+        border-top: 1px solid $gray-lighter;
+        border-bottom: 1px solid $gray-lighter;
+
+        span {
+            line-height: 20px;
+        }
+
+        img {
+            max-height: 20px;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .pull-right {
+            float: right;
+            margin-right: 20px;
+        }
+
+        &.has-input {
+            padding-top: 5px;
+            height: 25px;
+        }
+
+        &.auto-height {
+            height: auto;
+        }
+    }
+}
+
+.attribute-list {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+
+    p {
+        margin-bottom: 5px;
+    }
+}

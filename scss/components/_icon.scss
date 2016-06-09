@@ -48,7 +48,30 @@
     font-size: 16px;
     display: inline-block;
 
-    &.icon-circle-red {
+    &.icon-circle-red-light {
         background-color: rgba(236, 81, 81, .8);
     }
+
+    &.icon-circle-danger {
+        background-color: $brand-danger;
+    }
+
+    &.icon-circle-warning {
+        background-color: $brand-warning;
+    }
+
+    &.icon-circle-success {
+        background-color: $brand-success;
+    }
+
+    &.icon-circle-info {
+        background-color: $brand-info;
+    }
+}
+
+.icon-xl {
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 28px;
 }

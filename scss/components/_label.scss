@@ -1,0 +1,14 @@
+.label {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    border-radius: 2px;
+    color: #fff;
+    margin-right: 5px;
+    font-size: 12px;
+    display: inline-block;
+
+    &.label-warning {
+        background-color: $brand-warning;
+    }
+}
