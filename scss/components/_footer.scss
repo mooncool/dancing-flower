@@ -15,4 +15,12 @@
     right: 0;
     bottom: 0;
     left: 0;
+    height: 39px;
+    border-top: 1px solid $gray-lighter;
+    background-color: #fff;
+
+    .btn {
+        height: 39px;
+        font-size: 17px;
+    }
 }

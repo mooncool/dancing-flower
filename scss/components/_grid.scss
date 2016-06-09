@@ -61,3 +61,19 @@
         }
     }
 }
+
+.category-grid { //home 热门分类
+    .item {
+        padding: 15px 25px;
+
+        i {
+            float: right;
+            line-height: 21px;
+            font-size: 21px;
+        }
+
+        span {
+            line-height: 21px;
+        }
+    }
+}

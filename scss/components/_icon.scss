@@ -52,6 +52,10 @@
         background-color: rgba(236, 81, 81, .8);
     }
 
+    &.icon-circle-black-light {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
     &.icon-circle-danger {
         background-color: $brand-danger;
     }
