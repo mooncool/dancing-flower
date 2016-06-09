@@ -93,6 +93,13 @@ a.btn {
     }
 }
 
+.btn-gray {
+    @include button-variant(#fff, $gray, $gray);
+    &.btn-outline {
+        @include button-color($gray, #fff, $gray);
+    }
+}
+
 // Button Sizes
 // --------------------------------------------------
 
