@@ -23,6 +23,10 @@ select {
     padding: 10px;
 }
 
+.bg-gray {
+    background-color: $gray-lighter;
+}
+
 .float-right {
     float: right !important;
 }
@@ -33,6 +37,14 @@ select {
 
 .text-red {
     color: $brand-danger !important;
+}
+
+.text-blue {
+    color: $brand-primary !important;
+}
+
+.text-gray {
+    color: $gray !important;
 }
 
 .text-center {

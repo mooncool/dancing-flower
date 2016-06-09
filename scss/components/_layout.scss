@@ -1,6 +1,7 @@
 
 .container {
     @include container-fixed;
+    height: 100%;
 }
 
 .row {
