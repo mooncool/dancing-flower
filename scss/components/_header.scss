@@ -25,10 +25,11 @@
     width: 100%;
     padding: 0 $header-padding;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     left: 0;
     height: 40px;
+    z-index: 3;
 
     .logo {
         width: 100px;

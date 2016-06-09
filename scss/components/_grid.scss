@@ -8,11 +8,14 @@
         width: 50%;
         padding: 5px;
         display: inline-block;
+        float: left;
+        background-color: #fff;
         @include box-sizing(border-box);
         @include border($common-border-config, top);
+        @include border($common-border-config, right);
 
-        &:nth-child(odd) {
-            @include border($common-border-config, right);
+        &:nth-child(even) {
+            border-right-color: #fff;
         }
 
         .img-container {
