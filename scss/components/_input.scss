@@ -16,6 +16,12 @@
         padding-right: 10px;
         @include box-sizing(border-box);
         background-color: $white;
+        height: 40px;
+        border-radius: 0;
+    }
+
+    select {
+        height: 41px;
     }
 
     &.has-icon {
