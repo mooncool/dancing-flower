@@ -20,3 +20,55 @@
         }
     }
 }
+
+.header-home {
+    width: 100%;
+    padding: 0 $header-padding;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+
+    .logo {
+        width: 100px;
+        padding-top: 6px;
+
+        a {
+            color: #fff;
+            line-height: 14px;
+
+            &:first-of-type {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .search-box {
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        left: 80px;
+        height: 30px;
+
+        input {
+            width: 100%;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            padding: 5px 5px 5px 30px;
+            height: 30px;
+            border: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        span {
+            position: absolute;
+            left: 9px;
+            line-height: 30px;
+        }
+
+    }
+}

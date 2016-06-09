@@ -17,3 +17,24 @@
         position: relative;
     }
 }
+
+.box-flex {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    background-color: #fff;
+
+    li {
+        list-style: none;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        text-align: center;
+        padding: 10px 0;
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}
