@@ -45,3 +45,36 @@
         }
     }
 }
+
+.order-box {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    margin-top: 10px;
+
+    & > div {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        @include box-sizing(border-box);
+        @include border($common-border-config, bottom);
+
+        i:last-of-type {
+            font-size: 13px;
+        }
+    }
+
+    p {
+        padding: 10px;
+        @include border($common-border-config, bottom);
+        text-align: right;
+
+        &:last-of-type {
+            height: 33px;
+        }
+    }
+
+    button {
+        width: 100px;
+    }
+}
