@@ -5,6 +5,7 @@
     width: 100%;
     background-color: #fff;
     margin-top: 10px;
+    position: relative;
 
     .box-header {
         padding: 5px 0;
@@ -47,11 +48,6 @@
 }
 
 .order-box {
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    margin-top: 10px;
-
     & > div {
         position: relative;
         width: 100%;
@@ -76,5 +72,22 @@
 
     button {
         width: 100px;
+    }
+}
+
+.address-box {
+    & > p {
+        padding: 8px 10px 0;
+    }
+
+    & > div {
+        margin-top: 10px;
+        @include border($common-border-config, top);
+    }
+
+    .col-6 {
+        @include border($common-border-config, right);
+        @include box-sizing(border-box);
+        padding: 10px 0;
     }
 }
