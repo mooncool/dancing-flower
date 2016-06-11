@@ -26,6 +26,10 @@
         margin-top: -5px;
         margin-bottom: -5px;
 
+        &.center-search-box {
+            padding-right: 40px;
+        }
+
         i {
             position: absolute;
             line-height: 30px;
