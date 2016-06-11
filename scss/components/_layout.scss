@@ -22,3 +22,13 @@
         padding: 10px;
     }
 }
+
+.content {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    min-height: 40px;
+    border-top: 2px solid $gray-lighter;
+}
