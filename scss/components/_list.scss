@@ -129,3 +129,36 @@
         margin: 5px auto 0;
     }
 }
+
+.cart-list {
+    background-color: #fff;
+
+    .radio {
+        display: inline-block;
+        width: 20px;
+        float: left;
+        line-height: 100px;
+
+        i {
+            font-size: 18px;
+            margin-left: -4px;
+        }
+    }
+
+    .item .item-info {
+        left: 140px;
+    }
+
+    .cart-list-price {
+        position: absolute;
+        right: 0;
+        top: 2px;
+    }
+
+    .right-bottom-icon {
+        position: absolute;
+        right: 0;
+        bottom: 3px;
+        font-size: 22px;
+    }
+}
